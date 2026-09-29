@@ -142,13 +142,16 @@
         let currentFilter = 'all'; // 'all' or 'available'
         
         // App Environment variables
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'topic-selector-app';
-        let firebaseConfig = null;
-        try {
-            firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-        } catch(e) {
-            console.warn("Firebase config parsing failed, defaulting to empty.");
-        }
+        const appId = 'topic-selector-app';
+        const firebaseConfig = {
+          apiKey: "AIzaSyAw6Du4fpPI8gbkJth7PwfcylyJXIU0c80",
+          authDomain: "cls-topic-selector.firebaseapp.com",
+          projectId: "cls-topic-selector",
+          storageBucket: "cls-topic-selector.firebasestorage.app",
+          messagingSenderId: "364142564972",
+          appId: "1:364142564972:web:a133d3757d655f9cf5aa49",
+          measurementId: "G-6CNQNMG4R5"
+        };
 
         // DOM Elements
         const loadingScreen = document.getElementById('loading-screen');
