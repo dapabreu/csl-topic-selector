@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topic Selector - Student Portal</title>
+    <title>CSL Research Topic Selector - Student Portal</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -35,7 +35,7 @@
                 <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold shadow-md">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
                 </div>
-                <h1 class="text-xl font-bold text-slate-800 tracking-tight">Academic Topic Selector</h1>
+                <h1 class="text-xl font-bold text-slate-800 tracking-tight">CSL Research Topic Selector - Student Portal</h1>
             </div>
             <div id="user-info" class="hidden items-center gap-3 text-sm font-medium text-slate-600">
                 <span id="display-name" class="px-3 py-1 bg-slate-100 rounded-full border border-slate-200 shadow-sm"></span>
@@ -58,9 +58,9 @@
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                 </div>
                 <h2 class="text-2xl font-bold text-slate-800 mb-2">Student Portal</h2>
-                <p class="text-slate-500 mb-6 text-sm">Enter your full name to view and claim your topic.</p>
+                <p class="text-slate-500 mb-6 text-sm">Enter your full name and team # to view and claim your topic.</p>
                 <form id="name-form" class="flex flex-col gap-4">
-                    <input type="text" id="name-input" placeholder="e.g., Jane Doe" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all shadow-sm">
+                    <input type="text" id="name-input" placeholder="e.g., Jane Doe (Team #1)" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all shadow-sm">
                     <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition-all shadow-md active:scale-[0.98]">
                         Enter Session
                     </button>
@@ -74,7 +74,7 @@
             <!-- Stats Header -->
             <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 flex flex-wrap gap-4 items-center justify-between">
                 <div>
-                    <h2 class="text-lg font-bold text-slate-800">Available Topics</h2>
+                    <h2 class="text-lg font-bold text-slate-800">Available Research Topics</h2>
                     <p class="text-sm text-slate-500">First come, first served. Review the list carefully.</p>
                 </div>
                 <div class="flex gap-4">
@@ -92,7 +92,7 @@
             <!-- Topic List Section -->
             <div class="flex flex-col gap-4">
                 <div class="flex items-center justify-between px-1">
-                    <h3 class="font-semibold text-slate-700">Topic Pool</h3>
+                    <h3 class="font-semibold text-slate-700">Research Topic Pool</h3>
                     <div class="flex gap-2 bg-slate-100 p-1 rounded-lg border border-slate-200">
                         <button id="filter-all" class="text-xs font-semibold px-3 py-1.5 rounded-md bg-white text-slate-800 shadow-sm transition-all">All</button>
                         <button id="filter-available" class="text-xs font-semibold px-3 py-1.5 rounded-md text-slate-500 hover:text-slate-700 transition-all">Available Only</button>
